@@ -1,21 +1,12 @@
-#! /usr/local/bin/python3
-#  main.py
-#  utf-8
-import time
-import re
-import sys
+#!  /usr/local/bin/python3
+#   main.py
+#   codeing:UTF-8
 import down_timer
+import argument_process
 
-max_time = 0
+# 引数から整数のタプルを生成する
+time = argument_process.argument_process()
 
-#python3から呼び出すときと，コマンドのようにでも呼び出せるようにする
-#TODO 正規表現で書き換える
-
-
-from down_timer import down_timer 
-down_timer(max_time)
-
-
-
-
+# タイマーを実行する
+down_timer.down_timer(max_time)
 

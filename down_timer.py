@@ -1,11 +1,11 @@
-#! /usr/local/bin/python3
-#  down_timer.py
-#  utf-8
-#  This file is a part of "timer" made by annin
+#   python3
+#   down_timer.py
+#   codeing:UTF-8
 import time
-import sys
 
 def down_timer(max_time):
+
+
     for i in range(max_time, 0, -1):  
         print(f"remaining: {i}sec")
         time.sleep(1)
