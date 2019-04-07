@@ -12,7 +12,5 @@ def down_timer(max_time):
                 .format(hour=hour, minute=minute, second=second))
         time.sleep(1)
         print("\033[1A", end='')
-    #TODO formatを整える
-    #TODO 音をつける
     print("\nA timer finished!")
 
